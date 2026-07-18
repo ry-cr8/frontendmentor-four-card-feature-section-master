@@ -2,23 +2,61 @@
 
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
-.feature-card {
-  width: auto;
-  height: auto;
-  padding: 15px;
-
-  display: flex;
+body {
+  min-width: 100vh;
+  padding: 4rem 2rem;
+  background-color: hsl(0, 0%, 98%);
 }
 
 .hero-section {
   text-align: center;
 }
 
-.below-h1 {
-  display: block;
+.header1 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 33.5px;
+}
+
+.header2 {
+  font-size: 34px;
+  font-weight: 200;
+}
+
+.paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  max-width: 500px;
+  margin: 0 auto 0;
+  font-size: 15px;
+}
+
+.header1,
+.header2,
+.paragraph {
+  color: hsl(234, 12%, 34%);
+}
+
+.cards {
+  display: flex;
+}
+
+.feature-card {
+  width: auto;
+  height: auto;
+  padding: 15px;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .attribution {
