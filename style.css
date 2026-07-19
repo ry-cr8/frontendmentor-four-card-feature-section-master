@@ -8,13 +8,14 @@
 }
 
 body {
-  min-width: 100vh;
+  min-height: 100vh;
   padding: 4rem 2rem;
-  background-color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 6%, 93%);
 }
 
 .hero-section {
   text-align: center;
+  color: hsl(234, 12%, 34%);
 }
 
 .header1 {
@@ -30,33 +31,60 @@ body {
 
 .paragraph {
   font-weight: 400;
-  font-size: 14px;
   max-width: 500px;
   margin: 0 auto 0;
-  font-size: 15px;
+  font-size: 14px;
 }
 
-.header1,
-.header2,
-.paragraph {
-  color: hsl(234, 12%, 34%);
+.grid-container {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "  .   card2   .  "
+    "card1 card2 card3"
+    "card1 card4 card3"
+    "  .   card4   .  ";
+  gap: 1rem;
 }
 
-.cards {
+.feature-card1,
+.feature-card2,
+.feature-card3,
+.feature-card4 {
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  min-height: 250px;
   display: flex;
-}
-
-.feature-card {
-  width: auto;
-  height: auto;
-  padding: 15px;
-}
-
-.middle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+}
+
+.feature-card1 {
+  grid-area: card1;
+  border-top: solid 5px hsl(180, 62%, 55%);
+}
+
+.feature-card2 {
+  grid-area: card2;
+  border-top: solid 5px hsl(0, 78%, 62%);
+}
+
+.feature-card3 {
+  grid-area: card3;
+  border-top: solid 5px hsl(212, 86%, 64%);
+}
+
+.feature-card4 {
+  grid-area: card4;
+  border-top: solid 5px hsl(34, 97%, 64%);
+}
+
+.icons {
+  height: 64px;
+  width: 64px;
+  align-self: flex-end;
+  margin-top: 30px;
 }
 
 .attribution {
