@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution link](https://www.frontendmentor.io/solutions/four-card-feature-section-with-css-grid-kzWQhLd_nH)
+- Live Site URL: [Live site link](https://ry-cr8.github.io/frontendmentor-four-card-feature-section-master/)
 
 ## My process
 
